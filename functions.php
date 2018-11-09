@@ -1,8 +1,7 @@
 <?php 
 
 function btowp_themes() {
-    
-    wp_enqueue_style('bootstrap_css', get_template_directory_uri().'/css/bootstrap.min.css');
+
     
     wp_enqueue_style('magnific_css', get_template_directory_uri().'/vendor/magnific-popup/magnifici-popup.css');
     
