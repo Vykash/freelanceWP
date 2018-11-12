@@ -24,7 +24,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src=<?php the_post_thumbnail(); ?>
+              <img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>">
             </a>
           </div>
             <?php endwhile; ?>

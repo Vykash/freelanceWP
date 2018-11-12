@@ -13,7 +13,7 @@
                         <?php the_title(); ?>
                     </h2>
                     <hr class="star-dark mb-5">
-                    <img class="img-fluid mb-5" src="<?php the_post_thumbnail()?>">
+                    <img class="img-fluid mb-5" src="<?php the_post_thumbnail_url()?>">
                     <p class="mb-5">
                         <?php the_content(); ?>
                     </p>
