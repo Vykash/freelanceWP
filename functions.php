@@ -28,4 +28,9 @@ function btowp_themes_js() {
 }
 
 add_action('wp_enqueue_scripts', 'btowp_themes_js');
+
+//Theme Support
+    
+        add_theme_support('post-thumbnails');
+
 ?>
