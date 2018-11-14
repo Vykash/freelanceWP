@@ -11,9 +11,11 @@ function btowp_themes() {
 
 function btowp_themes_js() {
     
-    wp_enqueue_script('jquery', get_template_directory_uri().'/vendor/jquery/jquery.min.js', true);
+    wp_enqueue_script('jquery', get_template_directory_uri().'/vendor/jquery/jquery.js',array('jquery'), '', true);
     
-    wp_enqueue_script('bootstrap_js', get_template_directory_uri().'/vendor/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), true);
+    wp_enqueue_script('jquery_custom', get_template_directory_uri().'/js/custom.js', array('jquery'), '', true);
+    
+    wp_enqueue_script('bootstrap_js', get_template_directory_uri().'/vendor/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), '', true);
     
     wp_enqueue_script('js_easing', get_template_directory_uri().'/vendor/jquery-easing/jquery.easing.min.js', array('jquery'), '', true);
     
