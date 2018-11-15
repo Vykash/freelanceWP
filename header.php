@@ -24,7 +24,7 @@
     <?php wp_head()?>
 </head>
 
-<body id="page-top">
+<body id="page-top" <?php body_class()?>>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">

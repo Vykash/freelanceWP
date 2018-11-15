@@ -398,19 +398,25 @@ a:active {
 
 }
 
-.post-overlay {
+.portfolio-modal {
     position: fixed;
     height: 100vh;
-    width: 90%;
-    margin: 0 auto;
-    top: -40px;
+    width: 100%;
+    top: 0px;
     left: 0px;
-    right: 0px;
-    display: none;
     z-index: 10000;
-    overflow: scroll;
 }
 
-.stop-scroll {
-    overflow: hidden;
+.img-full{
+    width: 100%;
+}
+
+.portfolio-modal .portfolio-modal-dialog {
+    min-height: auto;
+    height: 90vh;
+}
+
+.home .post-content{
+    overflow: auto;
+    height: 230px;
 }

@@ -19,11 +19,11 @@
         <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
         <hr class="star-dark mb-5">
         <div class="row">
-            <div class="overlay-container container">
+            <!-- <div class="overlay-container container">
                 <div class="post-overlay">
-
+            
                 </div>
-            </div>
+            </div> -->
             <?php if(have_posts()) : ?>
             <?php while(have_posts()) : the_post(); ?>
             <div class="col-md-6 col-lg-4">
@@ -33,7 +33,8 @@
                             <i class="fas fa-search-plus fa-3x "></i>
                         </div>
                     </div>
-                    <img class="img-fluid " src="<?php the_post_thumbnail_url(); ?>">
+                    <!-- <img class="img-fluid " src="<?php the_post_thumbnail_url(); ?>"> -->
+                    <?php the_post_thumbnail('medium', array('class' => 'img-fluid img-full')); ?>
                 </a>
             </div>
             <?php endwhile; ?>
