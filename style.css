@@ -393,11 +393,6 @@ a:active {
     border-color: #1a252f;
 }
 
-.overlay-container {
-    position: relative;
-
-}
-
 .portfolio-modal {
     position: fixed;
     height: 100vh;
@@ -407,7 +402,7 @@ a:active {
     z-index: 10000;
 }
 
-.img-full{
+.img-full {
     width: 100%;
 }
 
@@ -416,7 +411,15 @@ a:active {
     height: 90vh;
 }
 
-.home .post-content{
+.home .post-content.mt-5 {
     overflow: auto;
-    height: 230px;
+    height: 100px;
+}
+
+.post-image img{
+    max-width: 100%;
+}
+
+.portfolio-modal-dismiss{
+    margin-top: 15px;
 }
