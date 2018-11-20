@@ -119,13 +119,17 @@ section h2 {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
 }
-
+.menu-header-menu-container{
+    width: 100%;
+}
 #menu-header-menu{
     list-style: none;
+    margin-left: 45%;
 }
 
 #menu-header-menu li.menu-item{
     float: left;
+   
 }
 
 #menu-header-menu li.menu-item a {
@@ -190,10 +194,21 @@ section h2 {
 }
 
 /*Custom Media*/
+@media (max-width: 1200px){
+    
+      #menu-header-menu{
+        padding: 0;
+        margin-left: 40%;
+        margin-top: 10px;
+    }
+    
+}
 @media (max-width: 991px){
     
     #menu-header-menu{
         padding: 0;
+        margin-left: 0px;
+        margin-top: 10px;
     }
     #menu-header-menu li.menu-item,
     #menu-header-menu li.menu-item a{
