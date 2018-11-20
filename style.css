@@ -119,6 +119,14 @@ section h2 {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
 }
+#menu-header-menu .rounded{
+    border-radius: none;
+}
+#menu-header-menu .rounded a{
+    border-radius: .25rem!important;
+}
+
+
 .menu-header-menu-container{
     width: 100%;
 }

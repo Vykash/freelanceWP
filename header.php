@@ -35,9 +35,14 @@
           <i class="fas fa-bars"></i>
         </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-                <!--<ul class="navbar-nav ml-auto">-->
-                    <!--<li class="menu-item nav-item mx-0 mx-lg-1">
+                <div id="menu-header-menu">
+                 <?php wp_nav_menu( array( 
+                            'theme_location' => 'header-menu',
+                            'items_wrap' => '<ul id="%1$s" class="%2$s navbar-nav ml-auto">%3$s</ul>'
+                        ) ); ?>
+                </div>
+                <!-- <ul class="navbar-nav ml-auto">
+                    <li class="menu-item nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="menu-item nav-item mx-0 mx-lg-1">
@@ -45,8 +50,8 @@
                     </li>
                     <li class="menu-item nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
-                    </li>-->
-                <!--</ul>-->
+                    </li>
+                </ul> -->
             </div>
         </div>
     </nav>
