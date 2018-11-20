@@ -72,6 +72,4 @@
         });
     });
 
-    console.log('urca');
-
 })(jQuery); // End of use strict

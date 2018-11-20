@@ -120,20 +120,32 @@ section h2 {
     letter-spacing: 0.0625rem;
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link {
+#menu-header-menu{
+    list-style: none;
+}
+
+#menu-header-menu li.menu-item{
+    float: left;
+}
+
+#menu-header-menu li.menu-item a {
     color: #fff;
+    padding: 1rem;
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #18BC9C;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:active,
-#mainNav .navbar-nav li.nav-item a.nav-link:focus {
+#menu-header-menu li.menu-item a:hover {
     color: #fff;
+    background: #18BC9C;
+    text-decoration: none;
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
+#menu-header-menu li.menu-item a:active,
+#menu-header-menu li.menu-item a:focus {
+    color: #fff;
+    background: #18BC9C;
+}
+
+#menu-header-menu li.menu-item a.active {
     color: #18BC9C;
 }
 
@@ -157,13 +169,13 @@ section h2 {
     #mainNav .navbar-nav {
         margin-top: 0;
     }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    #mainNav .navbar-nav > li.menu-item > a.nav-link.active {
         color: #fff;
         background: #18BC9C;
     }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    #mainNav .navbar-nav > li.menu-item > a:active,
+    #mainNav .navbar-nav > li.menu-item > a:focus,
+    #mainNav .navbar-nav > li.menu-item > a:hover {
         color: #fff;
         background: #18BC9C;
     }
@@ -173,6 +185,23 @@ section h2 {
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+    }
+    
+}
+
+/*Custom Media*/
+@media (max-width: 991px){
+    
+    #menu-header-menu{
+        padding: 0;
+    }
+    #menu-header-menu li.menu-item,
+    #menu-header-menu li.menu-item a{
+        float: none;
+        padding-top: 1rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 1rem;
     }
 }
 

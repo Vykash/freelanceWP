@@ -35,4 +35,13 @@ add_action('wp_enqueue_scripts', 'btowp_themes_js');
     
         add_theme_support('post-thumbnails');
 
+
+//Menu
+
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+
 ?>

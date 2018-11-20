@@ -4,11 +4,11 @@ function postImg(x) {
             var wW = jQuery(window).width();
             var arr = x;
             if (wW <= 468) {
-                currentImg = arr[0];
+               var  currentImg = arr[0];
             } else if (wW <= 1024) {
-                currentImg = arr[1];
+               var  currentImg = arr[1];
             } else {
-                currentImg = arr[2];
+               var  currentImg = arr[2];
             };
 
         };
@@ -43,7 +43,10 @@ function postImg(x) {
         jQuery('.close-button, .portfolio-modal-dismiss').on('click', function () {
             close_popup();
         });
+        
+        jQuery('.menu-item').off();
 
     });
+    
     
 });
