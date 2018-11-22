@@ -42,5 +42,35 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+//Widget Reg
 
+add_action( 'widgets_init', 'blankslate_widgets_init' );
+function blankslate_widgets_init()
+{
+register_sidebar( array (
+'name' => __( 'Footer-Widget-1', 'freelancer' ),
+'id' => 'footer-widget-area-1',
+'before_widget' => '',
+'after_widget' => "",
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+) );
+register_sidebar( array (
+'name' => __( 'Footer-Widget-2', 'freelancer' ),
+'id' => 'footer-widget-area-2',
+'before_widget' => '',
+'after_widget' => "",
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+) );
+register_sidebar( array (
+'name' => __( 'Footer-Widget-3', 'freelancer' ),
+'id' => 'footer-widget-area-3',
+'before_widget' => '',
+'after_widget' => "",
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+) );
+    
+}
 ?>

@@ -2,13 +2,13 @@ jQuery(document).ready(function () {
 
 function postImg(x) {
             var wW = jQuery(window).width();
-            var arr = x;
+            arr = x;
             if (wW <= 468) {
-               var  currentImg = 'arr[0]';
+                 currentImg = 'arr[0]';
             } else if (wW <= 1024) {
-               var  currentImg = 'arr[1]';
+                 currentImg = 'arr[1]';
             } else {
-               var  currentImg = 'arr[2]';
+                 currentImg = 'arr[2]';
             };
 
         };

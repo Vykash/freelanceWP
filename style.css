@@ -130,6 +130,16 @@ section h2 {
 .menu-header-menu-container{
     width: 100%;
 }
+
+.menu-header-menu-container ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.menu-header-menu-container li a{
+    color: #fff;
+    font-size: 1.25rem;
+}
 #menu-header-menu{
     list-style: none;
     margin-left: 45%;
@@ -474,4 +484,9 @@ a:active {
 
 .portfolio-modal-dismiss{
     margin-top: 15px;
+}
+
+.textwidget p{
+    font-size: 1.25rem;
+    font-weight: 300;
 }
